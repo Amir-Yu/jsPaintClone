@@ -1,0 +1,24 @@
+.container {
+  display: flex;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 50px;
+  margin: 5px;
+}
+
+.buttons > * {
+  height: 50px;
+}
+
+input[type="range"] {
+  transform: rotate(90deg) translate(25px, 26px);
+  width: 100px;
+}
+
+.placeHolder {
+  visibility: hidden;
+}

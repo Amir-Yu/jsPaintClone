@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Paint Clone</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="buttons">
+        <input type="button" onclick="btnClear()" value="Clear" />
+        <input type="button" onclick="btnBrashMode(this)" value="Brash" />
+        <input type="color" id="fgColor" oninput="btnSetFgColor(this)" />
+        <input type="color" id="bgColor" oninput="btnSetBgColor(this)" />
+        <input type="range" id="brashWidth" oninput="btnSetbrashWidth(this)" min="1" max="50" />
+        <input type="button" class="placeHolder" />
+        <input type="button" onclick="btnUndo()" value="Undo" disabled />
+        <input type="button" value="Save" onclick="btnSave()" />
+        <input type="button" value="Load" onclick="btnLoad()" />
+      </div>
+    </div>
+  </body>
+  <script src="/painter.js"></script>
+</html>
