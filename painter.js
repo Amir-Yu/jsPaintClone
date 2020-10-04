@@ -7,7 +7,7 @@ const painter = {
   savedImages: localStorage.savedImages ? JSON.parse(localStorage.savedImages) : [],
   containerElm: document.querySelector(".container"),
   canvasElm: document.createElement("canvas"),
-  initRender: function () {
+  initRender() {
     this.canvasElm.id = "painter";
     this.canvasElm.height = this.height;
     this.canvasElm.width = this.width;
@@ -31,7 +31,7 @@ const painter = {
     document.querySelector("#bgColor").value = painter.backColor;
     document.querySelector("#brashWidth").value = painter.brashWidth;
   },
-  registerCanvasEvents: function () {
+  registerCanvasEvents() {
     this.canvasElm.addEventListener("mousedown", function (e) {
       if (e.buttons) {
         // console.log(e);
